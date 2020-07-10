@@ -56,11 +56,11 @@ new Vue({
                     break;
                 case 'edit':
                     this.tempProduct = Object.assign({},item);
-                    console.log(this.tempProduct);
-                    $('productModal').modal('show');
+                    // console.log(this.tempProduct);
+                    $('#productModal').modal('show');
                     break;
                 case 'delete':
-                    $('delProductModal').modal('show');
+                    $('#delProductModal').modal('show');
                     this.tempProduct = Object.assign({},item);
                     break;
                 default:
